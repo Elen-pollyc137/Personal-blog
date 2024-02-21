@@ -1,0 +1,19 @@
+.container { 
+   width: 100%;
+   height: 1vh;
+   display: flex;
+   align-items: center;
+
+   padding: 3rem 0;
+
+}
+.box{
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    h1{
+      color: #FFFFFF;
+    }
+}

@@ -1,0 +1,26 @@
+.container { 
+   width: 100%;
+   padding: 1rem 0;
+}
+.box{
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    color: var(--gray-7);
+
+}
+.box p {
+  display: flex;
+  align-items: center;
+}
+
+.box a {
+  color: var(--gray-7);
+}
+
+.box a:hover {
+  color: var(--gray-1);
+}

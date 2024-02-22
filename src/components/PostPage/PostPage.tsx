@@ -1,5 +1,3 @@
-'use client'
-
 import styles from './styles.module.scss'
 
 interface FormPo {
@@ -16,8 +14,9 @@ interface PostCardProps {
 const PostsPage: React.FC<PostCardProps> = ({ post }) => {
   return (
     <div className={styles.box}>
-      <h1>Posts</h1>
       <h2>{post.user}</h2>
+      <img src={post.coverUrl} alt="love" width={400} height={250} />
+      <p>{post.content}</p>
     </div>
   )
 }

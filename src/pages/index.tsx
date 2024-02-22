@@ -5,6 +5,9 @@ import PostsPage from '@/components/PostPage/PostPage'
 import { FormPosts } from '@/services/types/create-post.types'
 import { useState, useEffect } from 'react'
 import { getPost } from '../services/api'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const Home = () => {
   const [posts, setPosts] = useState<FormPosts[]>([])
@@ -29,10 +32,11 @@ const Home = () => {
           <Profile />
         </header>
         <div>
-          <h1>uiguyhg</h1>
-          {posts.map((post) => (
-            <PostsPage key={post.id} post={post} />
-          ))}
+          <Slider dots infinite speed={500}>
+            {posts.map((post) => (
+              <PostsPage key={post.id} post={post} />
+            ))}
+          </Slider>
         </div>
         <footer>
           <Copyright />
